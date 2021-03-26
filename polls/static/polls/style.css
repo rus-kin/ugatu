@@ -1,0 +1,25 @@
+li a {
+    color: #fff;
+    text-decoration: none !important;
+    font-size: 17px;
+}
+
+li {
+    width: 478px;
+    list-style-type: none;
+    background: #8e97ab;
+    border: 1px solid #33333390;
+    border-radius: 4px;
+    margin: 8px 0 0 16px;
+    padding: 6px 14px;
+}
+
+body {
+    background: #fbfbfb;
+}
+
+.btn-return {
+    width: 200px;
+    padding: 3px 5px;
+    margin: 5px;
+}
