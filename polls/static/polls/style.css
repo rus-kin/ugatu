@@ -1,25 +1,90 @@
-li a {
+.li-main a {
     color: #fff;
     text-decoration: none !important;
     font-size: 17px;
 }
 
-li {
+.li-main {
     width: 478px;
     list-style-type: none;
     background: #8e97ab;
     border: 1px solid #33333390;
     border-radius: 4px;
-    margin: 8px 0 0 16px;
     padding: 6px 14px;
+    margin: 7px 0;
 }
 
-body {
-    background: #fbfbfb;
+.ul-results {
+    padding-left: 64px;
+    font-size: 18px;
+}
+
+.header {
+    padding: 0 15px;
+    text-align: center;
+}
+
+p {
+    padding-left: 38px;
+    margin-top: 0;
+}
+
+.body {
+    background: #576474;
 }
 
 .btn-return {
     width: 200px;
     padding: 3px 5px;
     margin: 5px;
+}
+
+.center-div {
+    width: 620px;
+    padding: 10px 0 15px;
+    margin: 100px auto;
+    background: #f3f8d9;
+    box-shadow: 2px 2px 8px 3px #fff;
+    border: 2px solid gray;
+    border-radius: 7px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #424d51;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.ul-main {
+    padding: 0;
+}
+
+.btn {
+    background: #f49d14;
+    border: 1px solid #757575;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+}
+
+.form {
+    padding-left: 50px;
+    font-size: 18px;
 }

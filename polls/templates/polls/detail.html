@@ -5,19 +5,23 @@
     <title>Title</title>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body style="padding-left:15px;">
-    <h1>{{ question.question_text }}</h1>
-    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-    
-    <form action="{% url 'polls:vote' question.id %}" method="post">
-        {% csrf_token %}
-        {% for choice in question.choice_set.all %}
-            <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
-            <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
-        {% endfor %}
-        <button type="submit" class="btn btn-primary">Проголосовать</button>
-    </form>
+<body class="body">
+    <div class="center-div">
+        <div class="title">
+            <h2 class="header">{{ question.question_text }}</h2>
+        </div>
+        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+        <form class="form" action="{% url 'polls:vote' question.id %}" method="post">
+            {% csrf_token %}
+            {% for choice in question.choice_set.all %}
+                <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+                <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+            {% endfor %}
+                <div class="btn-wrap">
+                    <button type="submit" class="btn">Проголосовать</button>
+                </div>
+        </form>
+    </div>
 </body>
 </html>
