@@ -7,7 +7,7 @@
 .li-main {
     width: 478px;
     list-style-type: none;
-    background: #8e97ab;
+    background: #27d45c;
     border: 1px solid #33333390;
     border-radius: 4px;
     padding: 6px 14px;
@@ -30,7 +30,7 @@ p {
 }
 
 .body {
-    background: #576474;
+    background: #c4cad1;
 }
 
 .btn-return {
